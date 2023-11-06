@@ -1,13 +1,24 @@
 function hasTargetSum(array, target) {
-  // Write your algorithm here
+  for (index in array) {
+    for (let i = 0; i < array.length; i++) {
+      if (array[index] + array[i] == target && index != i) {
+        console.log(array[index],  array[i], array[index] + array[i]);
+        return true;
+      }
+    }
+  }
+  return false;
 }
 
 /* 
-  Write the Big O time complexity of your function here
+  O(n)
 */
 
 /* 
-  Add your pseudocode here
+  take an array of numbers and a target sum
+  check if each combination of the numbers equals the target
+  return true if they do, and list the matching pair
+  return false if not
 */
 
 /*
