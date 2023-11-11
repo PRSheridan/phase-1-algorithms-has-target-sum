@@ -11,7 +11,8 @@ function hasTargetSum(array, target) {
 }
 
 /* 
-  O(n)
+  in big O notation, this solution is a quadratic formula O(n2)
+  nested iteration
 */
 
 /* 
@@ -22,7 +23,10 @@ function hasTargetSum(array, target) {
 */
 
 /*
-  Add written explanation of your solution here
+  iterate through the given array, for each index, check if the sum of 
+  both indicies are equal to the target. Add an extra check to make sure the 
+  indicies are not pointing to the same index of the array. Return true if both
+  indicies are equal to the target.
 */
 
 // You can run `node index.js` to view these console logs
